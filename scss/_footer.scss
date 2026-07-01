@@ -1,0 +1,43 @@
+@use "breakpoints" as *;
+
+footer {
+  background-color: #1fa2ff;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.7;
+  @include pad {
+    padding: 16px 16px 40px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-info {
+    img {
+      width: 70px;
+      display: block;
+      margin-bottom: 8px;
+      @include pad {
+        width: 40px;
+      }
+    }
+  }
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    @include pad {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+    .hr-lines {
+      width: 1px;
+      height: 12px;
+      background-color: #fff;
+    }
+  }
+}

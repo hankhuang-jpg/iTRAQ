@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hino iTRAQ 車聯管理系統</title>
+    <meta
+      name="description"
+      content="Hino iTRAQ 以先進車聯網技術，整合多品牌車輛與多樣周邊感知設備，協助商用車客戶轉型為智慧化的先進管理模式。"
+    />
+    <meta
+      name="og:description"
+      content="Hino iTRAQ 以先進車聯網技術，整合多品牌車輛與多樣周邊感知設備，協助商用車客戶轉型為智慧化的先進管理模式。"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QYXGGMYQ59"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QYXGGMYQ59");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/all.min.css" />
+  </head>
+  <body>
+    <!-- popup -->
+    <div id="popup">
+      <div class="popup-main">
+        <img src="./img/popup-dots-l.svg" alt="" class="deco-dots dots-l" />
+        <img src="./img/popup-dots-r.svg" alt="" class="deco-dots dots-r" />
+        <button id="popup-clost-btn">
+          <img src="./img/popup-close.svg" alt="" />
+        </button>
+        <img class="popup-main-img" src="./img/iTRAQ-banner.jpg" alt="" />
+        <a
+          href="https://introduction.hino-itraq.com.tw/hino-itraq/event"
+          target="_blank"
+          >立即報名參與<img src="./img/link-arrow.svg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header id="header">
+      <div class="header-mask"></div>
+      <div class="header-main">
+        <div class="header-logo-col">
+          <img
+            src="./img/HINO-header-logo.png"
+            alt="HINO"
+            class="header-logo"
+          />
+        </div>
+        <nav>
+          <a href="#sec1">車聯管理系統介紹</a>
+          <a href="#sec4">全系列產品</a>
+          <a href="#sec5">安全省油駕駛挑戰賽</a>
+          <a href="#sec6">常見問題 FAQ</a>
+        </nav>
+        <div class="header-login-link-col">
+          <a
+            href="https://www.hino-itraq.com.tw/"
+            class="header-login-link"
+            target="_blank"
+            >立即登入</a
+          >
+        </div>
+        <button id="header-hamburger"></button>
+      </div>
+    </header>
+
+    <!-- kv -->
+    <div id="kv">
+      <h1 class="kv-texts">HINO iTRAQ 車聯管理系統</h1>
+      <h2 class="kv-texts">驅動未來，智掌先機</h2>
+      <p class="kv-texts">利用科技聯網、多工整合系統，達成智能車隊管理</p>
+      <picture>
+        <source media="(max-width: 1023px)" srcset="./img/kv-m.jpg" />
+        <img src="./img/kv.jpg" alt="" />
+      </picture>
+    </div>
+
+    <!-- sec1 HINO iTRAQ車聯管理系統 -->
+    <div id="sec1" class="ankor-link-target">
+      <div class="sec1-title">
+        <h2>HINO iTRAQ車聯管理系統</h2>
+        <div class="desc">
+          運用科技聯網結合日野原廠授權CAN-Bus車輛訊號，協助客戶達成全方位車隊管理。<br />
+          主要效益如下
+        </div>
+      </div>
+      <div class="sec1-left">
+        <picture>
+          <source media="(max-width: 1439px)" srcset="./img/sec1-bg-m.png" />
+          <img src="./img/sec1-bg.png" alt="" />
+        </picture>
+      </div>
+      <div class="sec1-right">
+        <ol>
+          <li>
+            <h3 class="list-title">效益一：營業不中斷</h3>
+            <div class="list-desc">
+              遠端診斷：即時回傳DTC車輛錯誤碼，引導即時回廠以防故障擴大。<br />智能保養：可設定保養提醒，系統留存保養記錄。
+            </div>
+          </li>
+          <li>
+            <h3 class="list-title">效益二：行車更安心</h3>
+            <div class="list-desc">
+              Safety Sense
+              Link：PCS預警防護及LDWS車道偏移警示，於電腦或手機警示紀錄，協助車主掌握危險駕駛。<br />服務整合：可擴充整合胎壓偵測、智能疲勞警示，並可自訂警報項目。
+            </div>
+          </li>
+          <li>
+            <h3 class="list-title">效益三：管理高效率</h3>
+            <div class="list-desc">
+              駕駛評價 (E-Coaching)：透過超速、怠速、急加減速等指標，引導建立省油與安全的駕駛習慣。
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- sec2 車聯管理系統介紹 -->
+    <div id="sec2">
+      <h2>車聯管理系統介紹</h2>
+      <div class="carousel-section">
+        <div class="carousel-container" id="sec2carousel">
+          <div class="nav-arrow arrow-left" id="btnPrev">❮</div>
+
+          <div class="slide" data-index="0">
+            <div class="slide-content slide-video">
+              <video
+                muted
+                autoplay
+                loop
+                playsinline
+                src="./features/feature1.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="slide" data-index="1">
+            <div class="slide-content slide-video">
+              <video
+                muted
+                autoplay
+                loop
+                playsinline
+                src="./features/feature2.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="slide" data-index="2">
+            <div class="slide-content slide-video">
+              <video
+                muted
+                autoplay
+                loop
+                playsinline
+                src="./features/feature3.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="slide" data-index="3">
+            <div class="slide-content slide-video">
+              <video
+                muted
+                autoplay
+                loop
+                playsinline
+                src="./features/feature4.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="slide" data-index="4">
+            <div class="slide-content slide-video">
+              <video
+                muted
+                autoplay
+                loop
+                playsinline
+                src="./features/feature5.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="slide" data-index="5">
+            <div class="slide-content slide-img">
+              <img src="./features/feature6.png" alt="" />
+            </div>
+          </div>
+          <div class="slide" data-index="6">
+            <div class="slide-content slide-img">
+              <img src="./features/feature7.png" alt="" />
+            </div>
+          </div>
+          <div class="slide" data-index="7">
+            <div class="slide-content slide-img">
+              <img src="./features/feature8.png" alt="" />
+            </div>
+          </div>
+          <div class="slide" data-index="8">
+            <div class="slide-content slide-img">
+              <img src="./features/feature9.png" alt="" />
+            </div>
+          </div>
+
+          <div class="nav-arrow arrow-right" id="btnNext">❯</div>
+        </div>
+
+        <div class="text-section" id="textSection">
+          <div class="text-number" id="textNum">01</div>
+          <div class="text-content">
+            <h3 class="text-title" id="textTitle">車輛定位Tracking</h3>
+            <p class="text-desc" id="textDesc">
+              即時掌握每台車輛位置，清晰的目視化設計讓您全盤掌握車輛狀態與駕駛資訊。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sec3 Service服務整合 -->
+    <div id="sec3">
+      <h2>Service服務整合</h2>
+      <div class="service-layout">
+        <div class="sec3-cards" id="sec3cardContainer">
+          <div class="sec3-card active" data-index="0">
+            <h3>多品牌車輛整合</h3>
+            <p>相容多品牌車輛，<br />單一平台、多元整合。</p>
+          </div>
+          <div class="sec3-card" data-index="1">
+            <h3>冷鏈溫度感知</h3>
+            <p>可擴充，即時監控車廂溫度。</p>
+          </div>
+          <div class="sec3-card" data-index="2">
+            <h3>胎壓偵測</h3>
+            <p>可擴充，即時監控車輛胎壓、胎溫。</p>
+          </div>
+          <div class="sec3-card" data-index="3">
+            <h3>智能疲勞警示</h3>
+            <p>HINO 500系、700系專屬，透過影像辨識技術提醒不良駕駛行為。</p>
+          </div>
+        </div>
+
+        <div class="image-display" id="sec3imageContainer">
+          <div
+            class="sec3-img-placeholder img-placeholder active"
+            data-index="0"
+          >
+            <img src="./img/service1.png" alt="" />
+          </div>
+          <div class="sec3-img-placeholder img-placeholder" data-index="1">
+            <img src="./img/service2.png" alt="" />
+          </div>
+          <div class="sec3-img-placeholder img-placeholder" data-index="2">
+            <img src="./img/service3.png" alt="" />
+          </div>
+          <div class="sec3-img-placeholder img-placeholder" data-index="3">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              src="./img/service4.mp4"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sec4 全系列商品 -->
+    <div id="sec4" class="ankor-link-target">
+      <h2>全系列商品</h2>
+      <h3>
+        從新車、舊車、跨品牌到砂石車，四款方案對應不同車隊。定位、影像、法規合規一次看懂，快速找到最適合你的那一款。
+      </h3>
+      <picture>
+        <source media="(max-width: 1439px)" srcset="./img/products-m.jpg" />
+        <img class="sec4-products-img" src="./img/products.jpg" alt="" />
+      </picture>
+    </div>
+
+    <!-- sec5 iTRAQ安全省油駕駛挑戰賽 -->
+    <div id="sec5" class="ankor-link-target">
+      <h2>iTRAQ安全省油駕駛挑戰賽</h2>
+      <div class="sec5-main">
+        <div class="sec5-banner">
+          <img src="./img/iTRAQ-banner.jpg" alt="" />
+        </div>
+        <div class="sec5-right-col">
+          <ul>
+            <li>
+              <div class="title">報名期限</div>
+              <div class="desc">06/30止</div>
+            </li>
+            <li>
+              <div class="title">挑戰期間</div>
+              <div class="desc">06/01-09/30</div>
+            </li>
+            <li>
+              <div class="title">挑戰資格</div>
+              <div class="desc">300/500/700系統安裝並開通iTRAQ之車主</div>
+            </li>
+            <li>
+              <div class="title">獎金總額</div>
+              <div class="desc em">200萬+</div>
+            </li>
+          </ul>
+          <a
+            href="https://introduction.hino-itraq.com.tw/hino-itraq/event"
+            target="_blank"
+            >立即報名參與<img src="./img/link-arrow.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- sec6 FAQ -->
+    <div id="sec6" class="ankor-link-target">
+      <h2>常見問題 FAQ</h2>
+      <div id="faq-tabs" class="scroll-area">
+        <ul class="tabs-scroll">
+          <li class="active">開始使用</li>
+          <li>權利義務</li>
+          <li>使用問題</li>
+          <li>其他問題</li>
+        </ul>
+      </div>
+      <!-- FAQ - 開始使用 -->
+      <div class="faq-section show">
+        <div class="section-toggle-row">
+          <span>展開“開始使用”常見問題</span>
+        </div>
+        <ol class="faq-list">
+          <li>
+            <div class="q-main">
+              <div class="index">01</div>
+              <div class="q-row">
+                我應如何啟用車輛通訊聯網盒？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              請取用隨車配置唯一的「服務開通」卡片，並持手機使用相機功能進行掃碼，進入「服務開通」網頁流程，填寫基本資料並完成短信驗證後，隨即完成系統服務啟用，並可開始追蹤車輛動態及查詢車輛歷史紀錄
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">02</div>
+              <div class="q-row">
+                網頁上看不到車輛？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              請先檢查指定車輛是否發動，若車輛已發動，請檢查主機燈號是否正常作動；若燈號正常作動，仍然無法看到車輛狀態，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">03</div>
+              <div class="q-row">
+                我可以用同一支手機號碼註冊2台以上的車？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您可使用同一支手機號碼，進行多台車輛的「服務開通」，並可隨時登入瀏覽各別車輛的即時動態。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">04</div>
+              <div class="q-row">
+                沒有收到簡訊認證碼?
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              若您進行註冊操作時，未能正常收到驗證簡訊，請您先檢查手機網路訊號是否暢通，或是與您門號電信商確認，是否有設定系統簡訊之屏蔽功能。<br />
+              上述已檢查確認無誤，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">05</div>
+              <div class="q-row">
+                我應如何註冊 HINO iTRAQ 系統服務？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              ① 請先至www.HINO-iTRAQ.com.tw 平台首頁<br />
+              ② 打開首頁後，請點擊「註冊車隊」進行車隊資料建置<br />
+              ③ 車隊資料建立後，再建立系統管理者帳號<br />
+              ④ 完成帳號建立後，將會收到通知簡訊，您可立即登入 HINO iTRAQ
+              平台使用系統服務
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">06</div>
+              <div class="q-row">
+                我應如何啟用 HINO iTRAQ 帳號？
+
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              當您註冊完成車隊帳號後，可立即登入HINO
+              iTRAQ，並新增車輛及駕駛人員資訊，您就可一手掌握車隊動態。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">07</div>
+              <div class="q-row">
+                如何更改會員資料？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您登入系統後，可於「我的帳號」功能進行會員資料編輯，您可編輯「手機號碼」、「姓名」等資料。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">08</div>
+              <div class="q-row">
+                忘記會員密碼怎麼辦？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您可於HINO
+              iTRAQ登入頁面，使用「忘記密碼」功能，輸入您已註冊的手機號碼或電子信箱，系統將發送OTP驗證碼至您的手機號碼或電子信箱，收到OTP驗證碼後，請於頁面上填入驗證碼完成驗證，並修改為新的密碼內容。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">09</div>
+              <div class="q-row">
+                車主換手機時，如何變更車機綁定的帳號(手機)？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您登入系統後，可於「我的帳號」功能進行會員資料編輯，您可編輯「手機號碼」、「姓名」等資料。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">10</div>
+              <div class="q-row">
+                忘記/遺失會員帳號？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              若您忘記或遺失會員帳號，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務。
+            </div>
+          </li>
+        </ol>
+      </div>
+      <!-- FAQ - 權利義務 -->
+      <div class="faq-section">
+        <div class="section-toggle-row">
+          <span>展開“權利義務”常見問題</span>
+        </div>
+        <ol class="faq-list">
+          <li>
+            <div class="q-main">
+              <div class="index">01</div>
+              <div class="q-row">
+                Hino iTRAQ服務、會員之間的關係是什麼？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              Hino
+              iTRAQ是和泰汽車提供的車聯網服務系統，透過車機與雲端伺服器的連接創造車主更便利、實用、安全的服務。Hino
+              iTRAQ是隨車提供且綁定的服務內容。而完善的車聯網服務必須取得車輛的GPS、車體訊號等資訊。當您購入新車時，請使用個人手機號進行車輛通訊聯網盒啟用開通。接著請您在Hino
+              iTRAQ平台完成註冊，及會員帳號的啟用，並將車輛納管碼綁定在Hino
+              iTRAQ平台您的專屬帳號中。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">02</div>
+              <div class="q-row">
+                HINO iTRAQ服務是否有使用期限？ 效期如何計算？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              HINO
+              iTRAQ服務使用期限自車輛領牌日起算，三年內可免費使用，期滿後車主可辦理續約，以延續HINO
+              iTRAQ服務。未來的續約與付費方式將會以各種管道再告知車主。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">03</div>
+              <div class="q-row">
+                新購車車主現場未註冊會員，N年後自行註冊成為會員(3年內)，基本服務期限如何計算？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              HINO
+              iTRAQ服務期限為三年期，將以領牌日為起算時間，即使車主未於領牌日進行註冊，由於HINO
+              iTRAQ之各項服務均使用連網功能，故系統亦會於領牌日自行開通4G服務。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">04</div>
+              <div class="q-row">
+                領牌後三年內，會員權益可以暫時停權並保留延後期限嗎？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              HINO
+              iTRAQ服務於新購車領牌日起三年期限為贈送服務，中間無法暫時停權或轉移他人。若服務時限將屆滿時，可電洽客服專線，進行服務續約延長期限(需付費)。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">05</div>
+              <div class="q-row">
+                新購車車主因故不加入車聯網會員是否可退回服務資費(三年皆不加入與開通4G)？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              車聯網服務是隨車提供，硬體跟服務是綁在一起，故無法單獨拆開看待。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">06</div>
+              <div class="q-row">
+                日後系統軟體更新或有新增功能時，現在(2023.9)註冊的會員是否可享有同樣權利升級至最新版本，更新頻度為何？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              在既有硬體的規格之下，系統軟體更新(以提升效能為主)不額外收費，新增功能部份則必須視當時環境情況而定。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">07</div>
+              <div class="q-row">
+                車輛產權移轉時(中古車買賣、過戶)，車主是否需重新驗證登錄？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              Hino
+              iTRAQ服務是隨車提供的。在完成車輛所有權轉移的同時，原車主必須解除與車機綁定，剩餘有效的會員權益也必須轉移給下一位車主。新任車主必須進行重新驗證與登錄。但由於系統無法判斷中古車買賣行為，故請新車主攜帶相關證件至全台HINO服務廠進行車輛資料更新，以利驗證與登錄。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">08</div>
+              <div class="q-row">
+                三年約滿到期後，續約費用及相關權益? 不續約會影響什麼權益?
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              三年服務期滿之後，如車主繼續使用HINO
+              iTRAQ，必須再辦理續約手續。未來最新的續約與付費方式將會以各種管道訊息告知車主。若服務期滿後車主不續約，HINO
+              iTRAQ 服務立即終止。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">09</div>
+              <div class="q-row">
+                Hino iTRAQ是否會有隱私權問題？雲端平台管理權責、個資使用方式？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              Hino
+              iTRAQ為了提供完善的雲端服務，會蒐集車輛的GPS及相關車體訊號，系統在提供個資相關服務遵守個資法的規定，依照政府法令行之。另請車主在使用時必須謹慎，尤其在帳號密碼的保存與車輛借出期間必須特別注意。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">10</div>
+              <div class="q-row">
+                我的車子是領公司行號的名字(法人領牌)，我的權利義務是什麼？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              現階段法人車主的權利義務與自然人相同，可以使用Hino
+              iTRAQ的所有功能，未來如新增其它功能將另外公告說明。
+            </div>
+          </li>
+        </ol>
+      </div>
+      <!-- FAQ - 使用問題 -->
+      <div class="faq-section">
+        <div class="section-toggle-row">
+          <span>展開“使用問題”常見問題</span>
+        </div>
+        <ol class="faq-list">
+          <li>
+            <div class="q-main">
+              <div class="index">01</div>
+              <div class="q-row">
+                我能看到車輛即時的資訊嗎？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您可使用「監控地圖」功能，查閱車輛當下狀態(行駛、怠速、熄火)、車輛所在位置、車輛當下資訊(車牌、車速、里程)，亦可過「軌跡回放」功能調閱車輛過往的歷史資訊。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">02</div>
+              <div class="q-row">
+                車輛即時資訊多久更新？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              在「監控地圖」功能中，您看到的是最即時的車輛資訊，包含車輛發動的動態(更新頻率約1分鐘)，或車輛熄火前的最後一筆車輛資訊。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">03</div>
+              <div class="q-row">
+                我能看到車輛即時的路況影像嗎？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您可透過「即時影像」功能，查閱車輛當下四週環境情況，影像直播時間最長約
+              3分鍾，超過將中斷畫面，每月累計可直撥時間最長10分鐘，超過將暫停本功能。若超過每月使用時間後仍有需求者，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">04</div>
+              <div class="q-row">
+                我能看到車輛行駛過的路線情況嗎？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您可使用「軌跡回放」功能，查閱車輛當天或過往一年內指定日期之行駛資料。呈現內容包含車輛行經的路線軌跡，車輛行駛的累積里程數、累積行駛時長及行駛過程中操駕車輛的狀態等資訊。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">05</div>
+              <div class="q-row">
+                我能看到車輛資訊的統計報表？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              您可透過「營運月報」功能，查閱每個月份您管理的車輛稼動情況，還提供全部車輛當月累積的總里程數及總耗油量，讓您輕鬆掌握營運情報。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">06</div>
+              <div class="q-row">
+                我是否可在HINO iTRAQ 中預約車輛保養？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              HINO iTRAQ 提供您「保修系統」功能，可隨時線上預約全台各地 HINO
+              保修廠，並於預約時段將您的車輛行駛至預約地點，將由專人為您進行整備作業。<br />
+              HINO iTRAQ
+              亦提供車輛「保修週期」功能，您可自行定義車輛回廠檢查的週期提醒，讓您的車輛定期進廠保養，更增添一份行車保障。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">07</div>
+              <div class="q-row">
+                HINO iTRAQ 中的「任務管理」功能有何作用？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              不論您的車輛任務於平時進行的是常態性路線或特定路線計劃，都可透過「任務管理」功能進行車輛行駛路線編排，並可指定執行任務之運務人員，在指定時間內進行任務的執行，管理者可隨時查閱執行動態，並遠端協助運務人員現場工作管理。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">08</div>
+              <div class="q-row">
+                日後系統軟體更新或有新增功能時，現在(2023.9)註冊的會員是否可享有同樣權利升級至最新版本，更新頻度為何？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              在既有硬體的規格之下，系統軟體更新(以提升效能為主)不額外收費，新增功能部份則必須視當時環境情況而定。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">09</div>
+              <div class="q-row">
+                HINO iTRAQ有問題時，該找誰處理？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">10</div>
+              <div class="q-row">
+                在何種情況下，HINO iTRAQ可能無法運作?
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              HINO
+              iTRAQ服務是藉由安裝於座車上的SIM卡訊號連網所提供。因此服務內容的發送和接收品質，可能因車輛所在地網路供應商之基地台與訊號涵蓋範圍而有差異，也有可能會受到氣壓狀態、地形條件和座車停放位置及空間障礙物(如橋和建築物)而影響，亦可能因不可抗力之因素(包含但不限於：罷工、停工、官方命令以及車聯網服務設備、交通資訊提供者或是其它服務商之保養、維修、系統更新和擴充)而導致服務暫時中斷。若非上述情況而無法使用HINO
+              iTRAQ功能，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務或至全台HINO服務廠檢查。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">11</div>
+              <div class="q-row">
+                車輛賣中古車商，車聯網系統我想拆下來裝在新購入的車輛上使用，可以嗎？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              車聯網系統是與車輛綁定的系統，服務是隨車提供，故在中古車銷售時亦是將服務一同銷售，無法獨立拆除轉移。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">12</div>
+              <div class="q-row">
+                車機突然無法連線怎麼辦？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              請確認您的愛車停放位置網路收訊環境。HINO
+              iTRAQ服務是藉由安裝於車輛上的SIM卡訊號連網所提供，因此服務內容的發送和接收品質，可能因車輛所在地網路供應商之基地台與訊號涵蓋範圍而有差異，也可能會受到氣壓狀態、地形條件、車輛停放位置及空間障礙物(如橋樑、建築物)而影響，另可能因不可抗力之因素(包含但不限於：罷工、停工、官方命令以及本公司設備、交通資訊提供者或是其它服務商之保養、維修、系統更新和擴充)而導致服務暫時中斷。若為發動後更新之資訊，須待系統完成開機後執行各項功能資訊更新。<br />
+              *若非上述情況而無法使用HINO
+              iTRAQ功能，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務或至全台HINO服務廠檢查。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">13</div>
+              <div class="q-row">
+                舊車主是否可加裝?
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              若有舊車加裝的需求，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">14</div>
+              <div class="q-row">
+                車機內建SIM卡，可否撥打電話或使用社群媒體(ex. Line)通話？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              車機搭配之SIM卡，不提供電話通訊服務，在既有硬體的規格之下，僅提供車機與HINO
+              iTRAQ 系統通訊使用。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">15</div>
+              <div class="q-row">
+                其他廠牌的車輛可不可以安裝？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              若有他牌車輛加裝的需求，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務。
+            </div>
+          </li>
+        </ol>
+      </div>
+      <!-- FAQ - 其他問題 -->
+      <div class="faq-section">
+        <div class="section-toggle-row">
+          <span>展開“其他問題”常見問題</span>
+        </div>
+        <ol class="faq-list">
+          <li>
+            <div class="q-main">
+              <div class="index">01</div>
+              <div class="q-row">
+                為何我的車輛狀態、車輛定位點沒有更新？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              請確認您的愛車停放位置網路收訊環境。HINO
+              iTRAQ服務是藉由安裝於車輛上的SIM卡訊號連網所提供，因此服務內容的發送和接收品質，可能因車輛所在地網路供應商之基地台與訊號涵蓋範圍而有差異，也可能會受到氣壓狀態、地形條件、車輛停放位置及空間障礙物(如橋樑、建築物)而影響，另可能因不可抗力之因素(包含但不限於：罷工、停工、官方命令以及本公司設備、交通資訊提供者或是其它服務商之保養、維修、系統更新和擴充)而導致服務暫時中斷。若為發動後更新之資訊，須待系統完成開機後執行各項功能資訊更新。<br />
+              *GPS衛星定位收訊與天候、地形、環境有關，此外，若車輛使用含有金屬成份的隔熱紙亦會影響定位。<br />
+              *若非上述情況而無法使用HINO-iTRAQ服務，請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)，由專人為您服務或至全台服務廠檢查。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">02</div>
+              <div class="q-row">
+                系統更新或有新增功能時，應如何升級至最新版本？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              HINO
+              iTRAQ系統服務是藉由車輛通訊聯網盒讀取車體訊號後提供，在既有硬體規格下，如有系統更新或新增功能將於車輛發動後以OTA(Over
+              the
+              Air)技術遠端更新至您的愛車。愛車更新完成後會於下一次車輛發動時，更新系統狀態。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">03</div>
+              <div class="q-row">
+                即時影像無法觀看畫面？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              ① 請確認車輛是否為發動狀態，並且4G訊號正常。<br />
+              ② 請先使用原車螢幕，確認影像是正常呈現。<br />
+              ③ 重新點擊即時影像圖示。或稍後重新整理頁面。<br />
+              ④
+              請洽客服專線：0800-256-777(市話撥打)、03-3280122(手機撥打)由專人為您服務。
+            </div>
+          </li>
+          <li>
+            <div class="q-main">
+              <div class="index">04</div>
+              <div class="q-row">
+                HINO iTRAQ 有手機APP 可以使用嗎？
+                <div class="q-toggle-icon"></div>
+              </div>
+            </div>
+            <div class="a-row">
+              HINO iTRAQ 有提供 Android APP & iOS APP，請前往Google Play 或
+              Apple App Store 下載 HINO iTRAQ APP後，使用HINO iTRAQ
+              平台帳號/密碼登入，即可使用車聯網服務。
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-info">
+        <img src="./img/HINO-header-logo.png" alt="" />
+        Copyright © 2026. Hotai Motor Co., Ltd. All rights reserved<br />
+        總代理：和泰汽車股份有限公司
+      </div>
+      <div class="footer-links">
+        <a
+          class="footer-links-item"
+          href="https://www.hino.com.tw/download.aspx#letter"
+          target="_blank"
+          >契約書下載</a
+        >
+        <div class="hr-lines"></div>
+        <a
+          class="footer-links-item"
+          href="https://www.hino.com.tw/policy.aspx"
+          target="_blank"
+          >隱私權聲明</a
+        >
+        <div class="hr-lines"></div>
+        <div class="footer-links-item">客服專線0800-522-567</div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="./js/hammer.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

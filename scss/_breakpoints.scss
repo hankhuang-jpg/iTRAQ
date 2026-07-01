@@ -1,0 +1,25 @@
+@mixin web-l {
+  @media all and (min-width: 1921px) {
+    @content;
+  }
+}
+@mixin web {
+  @media all and (min-width: 1440px) {
+    @content;
+  }
+}
+@mixin web-s {
+  @media all and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin pad {
+  @media all and (max-width: 1439px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media all and (max-width: 374px) {
+    @content;
+  }
+}
